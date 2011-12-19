@@ -1,0 +1,60 @@
+
+<div data-role="page" class="type-interior" id='mainpage'>
+	</br>
+	<div class='center-wrapper' id='logo' data-role="none" data-theme='a' style='font-size: 50px;'>liveSynergy</div>
+	</br>
+
+	<div data-role="navbar" data-theme='a'>
+    	<ul> 
+			<li><a href="/home" data-iconpos="top" data-icon="home" data-ajax="false" class="ui-btn-up-b">HOME</a></li>
+            <li><a href="/entities" data-iconpos="top" data-icon="check" data-ajax="false" class="ui-btn-active" >MYTHINGS/MYSPACES</a></li>
+			<li><a href="/triggers" data-iconpos="top" data-icon="grid" data-ajax="false" class='ui-btn-up-b'>MY TRIGGERS</a></li>
+			<li><a href="/zones" data-iconpos="top" data-icon="alert" data-ajax="false" class='ui-btn-up-b'>ZONES</a></li>
+			<li><a href="/energy" data-iconpos="top" data-icon="star" data-ajax="false" class='ui-btn-up-b'>ENERGY</a></li>
+    	</ul>
+    </div>
+
+	</br>
+
+	<div data-role="content">
+		<div class='center-wrapper' style='margin: 50px;'>
+    		<div data-role="collapsible"  data-collapsed="false" data-theme="a" data-content-theme="b">
+    		   <h3>General Info</h3>
+    			<p> Entity:     /liveSynergy/demo-booth</p>
+        		<p> Type:       Thing </p>
+        		<p> SubType:    booth </p>
+        		<p> LivePulse:  94FD </p>
+    		</div>
+		</div>
+		<div class='center-wrapper' style='margin: 50px;'>
+
+    		<div data-role="collapsible"  data-collapsed="false" data-theme="a" data-content-theme="b">
+    		   <h3>Events</h3>
+    			<p>numOccupancyReachesX ( int x )	</p>
+    			<p>onHumanEnter ( User human )	 	</p>
+    			<p>onHumanExit ( User human )		</p>
+    			<p>powerGreaterThanX ( double x )	</p>
+    			<p>powerLessThanX ( double x )		</p>
+    		</div>
+		</div>
+        <div class='center-wrapper' style='margin: 50px;'>
+    		<div data-role="collapsible"  data-collapsed="false" data-theme="a" data-content-theme="b">
+    		   <h3>Methods</h3>
+       			<p>turnEverythingOn	</p>
+       			<p>turnEverythingOff</p>
+    		</div>
+		</div>
+		
+		<div class='center-wrapper' style='margin: 50px;'>
+		    <h3 class="ui-collapsible-heading"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-corner-top ui-btn-up-a" data-theme="a">
+    		<span class="ui-btn-inner ui-corner-top" aria-hidden="true"><span class="ui-btn-text">Children<span class="ui-collapsible-heading-status"> click to collapse contents</span></span>
+    		<span class="ui-icon ui-icon-shadow ui-icon-minus"></span></span></a></h3>
+    		<div data-role="controlgroup">
+    				<a href='/liveSynergy/demo-booth/fan' data-role="button"                   >Fan</a>
+    				<a href='/liveSynergy/demo-booth/lcd-monitor' data-role="button"   >LCD Monitor</a>
+    				<a href='/liveSynergy/demo-booth/light' data-role="button"               >Light</a>
+    	    </div>
+	    </div>
+        
+    </div>
+</div>

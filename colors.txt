@@ -1,0 +1,11 @@
+
+
+
+http://www.colourlovers.com/color/E9042B/bbb
+red:
+#E9042B
+
+
+http://www.colourlovers.com/color/1E9617/Shawns_polo_tee
+green:
+#1E9617

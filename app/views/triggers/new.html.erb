@@ -1,0 +1,181 @@
+<div data-role="page" class="type-interior" id='mainpage'>
+	</br>
+	<div class='center-wrapper' id='logo' data-role="none" data-theme='a' style='font-size: 50px;'>liveSynergy</div>
+	</br>
+
+	<div data-role="navbar" data-theme='a'>
+    	<ul> 
+			<li><a href="/home" data-iconpos="top" data-icon="home" data-ajax="false" class="ui-btn-up-b">HOME</a></li>
+            <li><a href="/entities" data-iconpos="top" data-icon="check" data-ajax="false" class="ui-btn-up-b" >MYTHINGS/MYSPACES</a></li>
+			<li><a href="/triggers" data-iconpos="top" data-icon="grid" data-ajax="false" class='ui-btn-active'>MY TRIGGERS</a></li>
+			<li><a href="/zones" data-iconpos="top" data-icon="alert" data-ajax="false" class='ui-btn-up-b'>ZONES</a></li>
+			<li><a href="/energy" data-iconpos="top" data-icon="star" data-ajax="false" class='ui-btn-up-b'>ENERGY</a></li>
+    	</ul>
+    </div>
+
+	</br>
+
+	<form action="" method="post">
+
+	<div data-role="fieldcontain" class="center-wrapper">
+		<h3>trigger name:</h3>
+		</br>
+		<input type="text" name="name" id="name" value=""  />
+	</div>
+	
+	<div data-role="fieldcontain" class="center-wrapper">
+		<h3>trigger description:</h3>
+		</br>
+		<textarea cols="40" rows="8" name="description" id="description"></textarea>
+	</div>
+	
+	<!-- <div style='margin-left: -95px;'> -->
+	<div data-role="fieldcontain" class="center-wrapper">
+		<h3>when this thing:</h3>
+		</br>
+		<select name="entity-1" id="entity-1" data-native-menu="false">
+			<option value="choose-one" data-placeholder="true">Choose one...</option>
+			<option value ="liveSynergy/demo-booth/fan">liveSynergy/demo-booth/fan	</option>
+			<option value ="liveSynergy/demo-booth/lcd-monitor">liveSynergy/demo-booth/lcd-monitor	 	</option>
+			<option value ="liveSynergy/demo-booth/light">liveSynergy/demo-booth/light		</option>
+			<option value ="liveSynergy/demo-booth">liveSynergy/demo-booth	</option>
+		</select>
+	</div>
+	</br>
+	<!-- if demo-booth -->
+
+	<div data-role="fieldcontain" class="center-wrapper">
+		<!-- <label class="select"></label> -->
+		<h3>has this event occur:</h3>
+		</br>
+		<select name="event-1" id="event-1" data-native-menu="false">
+			<option value="choose-one" data-placeholder="true">Choose one...</option>
+			<option class='space-only' value="numOccupancyReachesX">numOccupancyReachesX ( int x )	</option>
+			<option class='space-only human-only' value="onHumanEnter">onHumanEnter ( User human )	 	</option>
+			<option class='space-only human-only' value="onHumanExit">onHumanExit ( User human )		</option>
+			<option class='number-only' value ="powerGreaterThanX">powerGreaterThanX ( double x )	</option>
+			<option class='number-only' value ="powerLessThanX">powerLessThanX ( double x )		</option>
+		</select>
+	</div>
+	
+
+	<div id="number-param-1-div" style='display:none;'>
+		</br>
+		<div data-role="fieldcontain" class="center-wrapper ui-field-contain ui-body ui-br">
+	         <h3>this much power (in watts):</h3>
+	         <input type="number" name="number-param-1" id="number-param-1" value="" class="ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-c">
+		</div>
+	</div>
+
+
+	<div id="human-param-1-div" style='display:none;'>
+		<div data-role="fieldcontain" class="center-wrapper">
+			<h3>for this user</h3>
+			</br>
+			<select name="user-param-1" id="user-param-1" data-native-menu="false">
+				<option value="choose-one" data-placeholder="true">Choose one...</option>
+				<option value="liveSynergy/demo-booth/user1">liveSynergy/demo-booth/user1</option>
+				<option value="liveSynergy/demo-booth/user2">liveSynergy/demo-booth/user2</option>
+				<option value="liveSynergy/demo-booth/user3">liveSynergy/demo-booth/user3</option>
+			</select>
+		</div>
+	</div>
+	
+	</br>
+	
+	<div data-role="fieldcontain" class="center-wrapper">
+		<h3>make this thing:</h3>
+		</br>
+		<select name="entity-2" id="entity-2" data-native-menu="false">
+			<option value="choose-one" data-placeholder="true">Choose one...</option>
+			<option value="liveSynergy/demo-booth/fan">liveSynergy/demo-booth/fan</option>
+			<option value="liveSynergy/demo-booth/lcd-monitor">liveSynergy/demo-booth/lcd-monitor</option>
+			<option value="liveSynergy/demo-booth/light">liveSynergy/demo-booth/light</option>
+			<option value="liveSynergy/demo-booth/messenger">liveSynergy/demo-booth/messenger</option>
+		</select>
+	</div>
+
+	</br>
+
+	<div data-role="fieldcontain" class="center-wrapper">
+		<h3>do this:</h3>
+		</br>
+		<select name="method-2" id="method-2" data-native-menu="false">
+			<option value="choose-one" data-placeholder="true">Choose one...</option>
+			<option class='actuation-only' value="turnOn">turnOn ()</option>
+			<option class='actuation-only' value="turnOff">turnOff ()</option>
+			<option class='actuation-only' value="toggle">toggle ()</option>
+			<option class='messenger-only' value="notifyMe">notifyMe ( String message )	</option>
+		</select>
+	</div>
+
+	</br>
+
+	<div data-role="fieldcontain" class="center-wrapper" id="send-message" style='display: none;'>
+		<h3>send this message:</h3>
+		<textarea cols="40" rows="8" name="message-param-2" id="message-param-2"></textarea>
+	</div>
+	<div data-role="fieldcontain" class="center-wrapper" style='margin: 80px;'>
+		<input type="submit" value="Submit" data-theme="e" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-e"/>
+	</div>
+  
+	</form>
+</div>
+
+<script type="text/javascript">
+    $('#mainpage').live('pagecreate',function(event){
+		$('select#entity-1').change( function() { 
+
+	        var value = $(this).attr('value');
+
+			if (value != 'liveSynergy/demo-booth') {
+				$('.space-only').attr('disabled', 'disabled').trigger('refresh');
+				$('#event-1').selectmenu('refresh', true);
+			} else {
+				$('.space-only').removeAttr('disabled').trigger('refresh');
+				$('#event-1').selectmenu('refresh', true);
+			}
+	    });
+	
+		$('select#event-1').change( function() { 
+			
+			var value = $(this).attr('value');
+			alert(value);
+			if ((value === 'onHumanEnter') ||  (value === 'onHumanExit')) {
+				alert('display human');
+				$('#human-param-1-div').css('display', 'block');
+			} else {
+				$('#number-param-1-div').css('display', 'block');
+			}
+	    });
+	
+		$('select#entity-2').change( function() { 
+	        var value = $(this).attr('value');
+		
+			if (value != 'liveSynergy/demo-booth/messenger') {
+				$('.messenger-only').attr('disabled', 'disabled').trigger('refresh');
+				$('.actuation-only').removeAttr('disabled').trigger('refresh');
+				$('#method-2').selectmenu('refresh', true);
+			} else {
+				$('.actuation-only').attr('disabled', 'disabled').trigger('refresh');
+				$('.messenger-only').removeAttr('disabled').trigger('refresh');
+				$('#method-2').selectmenu('refresh', true);
+				
+			}
+	    });
+	
+		$('select#method-2').change( function() { 
+	        var value = $(this).attr('value');
+		
+			if (value != 'notifyMe') {
+				$('#send-message').css('display', 'none');
+			} else {
+				$('#send-message').css('display', 'block');
+				
+			}
+	    });
+	
+		
+	
+   	});
+</script>

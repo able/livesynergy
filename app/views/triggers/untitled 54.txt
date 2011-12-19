@@ -1,0 +1,25 @@
+var green_gradient = svg.append("svg:defs")
+  .append("svg:linearGradient")
+    .attr("id", "green_gradient")
+    .attr("x1", "0%")
+    .attr("y1", "0%")
+    .attr("x2", "100%")
+    .attr("y2", "100%")
+    .attr("spreadMethod", "pad");
+
+green_gradient.append("svg:stop")
+    .attr("offset", "0%")
+    .attr("stop-color", "#fefcea")
+    .attr("stop-opacity", 1);
+
+green_gradient.append("svg:stop")
+    .attr("offset", "50%")
+    .attr("stop-color", "#61c419")
+    .attr("stop-opacity", 1);
+
+green_gradient.append("svg:stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#b4e391")
+    .attr("stop-opacity", 1);
+
+#b4e391), color-stop(50%,), color-stop(100%,)); /* Chrome,Safari4+ */

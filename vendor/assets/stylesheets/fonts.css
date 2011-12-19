@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cuprum'), url('/fonts/dS-oM09uC7agWFnFSCUGievvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+/*  src: local('Cuprum'), url('http://themes.googleusercontent.com/static/fonts/cuprum/v2/dS-oM09uC7agWFnFSCUGievvDin1pK8aKteLpeZ5c0A.woff') format('woff');*/
+/*  url('#{Rails.root}/vendor/assets/fonts/cuprum.woff') format('woff'); */
+/*  url('http://themes.googleusercontent.com/static/fonts/cuprum/v2/dS-oM09uC7agWFnFSCUGievvDin1pK8aKteLpeZ5c0A.woff') format('woff');*/
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('/fonts/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+  /*src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');*/
+}
+@font-face {
+  font-family: 'Montez';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montez'), local('Montez-Regular'), url('/fonts/Ww9DrCS2WNNzzypZe0hgpuvvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+  /*src: local('Montez'), local('Montez-Regular'), url('http://themes.googleusercontent.com/static/fonts/montez/v2/Ww9DrCS2WNNzzypZe0hgpuvvDin1pK8aKteLpeZ5c0A.woff') format('woff');*/
+}

@@ -1,0 +1,55 @@
+
+
+<div data-role="page" class="type-interior" id='mainpage'>
+	</br>
+	<div class='center-wrapper' id='logo' data-role="none" data-theme='a' style='font-size: 50px;'>liveSynergy</div>
+	</br>
+
+	<div data-role="navbar" data-theme='a'>
+    	<ul> 
+			<li><a href="/home" data-iconpos="top" data-icon="home" data-ajax="false" class="ui-btn-up-b">HOME</a></li>
+            <li><a href="/entities" data-iconpos="top" data-icon="check" data-ajax="false" class="ui-btn-up-b" >MYTHINGS/MYSPACES</a></li>
+			<li><a href="/triggers" data-iconpos="top" data-icon="grid" data-ajax="false" class='ui-btn-active'>MY TRIGGERS</a></li>
+			<li><a href="/zones" data-iconpos="top" data-icon="alert" data-ajax="false" class='ui-btn-up-b'>ZONES</a></li>
+			<li><a href="/energy" data-iconpos="top" data-icon="star" data-ajax="false" class='ui-btn-up-b'>ENERGY</a></li>
+    	</ul>
+    </div>
+
+	</br>
+	
+	<div data-role="content">
+        
+	    
+		<div class='center-wrapper' style='margin: 50px;'>
+    		<div data-role="collapsible"  data-collapsed="false" data-theme="a" data-content-theme="b">
+    		   <h3>Trigger</h3>
+    			<p> <%=@trigger.name%>: <%=@trigger.description%> </p>
+    		</div>
+		</div>
+		
+		<div class='center-wrapper' style='margin: 50px;'>
+    		<div data-role="collapsible"  data-collapsed="false" data-theme="a" data-content-theme="b">
+    		   <h3>For this event:</h3>
+    			<p> for <%=@trigger.triggering_entity%> </p>
+    			<p> when: <%=@trigger.triggering["name"]%>
+    			    <% if @arg1 != "" %>
+    			    <%= ', X =' + @arg1 %>
+    			    <% end %> 
+    			</p>
+    		</div>
+		</div>
+		
+		<div class='center-wrapper' style='margin: 50px;'>
+    		<div data-role="collapsible"  data-collapsed="false" data-theme="a" data-content-theme="b">
+    		   <h3>Trigger this to happen:</h3>
+                <p> for <%=@trigger.triggered_entity%> </p>
+                <p> do this: <%=@trigger.triggered["name"]%>
+                    <% if @arg2 != "" %>
+                    <%= ', message: ' + @arg2 %>
+                    <% end %> 
+                </p>
+    		</div>
+		</div>
+        
+    </div>
+</div>
